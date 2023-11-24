@@ -44,7 +44,7 @@ export default defineComponent({
       opacity: 0.8;
     }
 
-    &.c-color-block--selected {
+    &--selected {
       border: 2px solid #B0B0B0;
     }
   }

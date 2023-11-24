@@ -1,12 +1,13 @@
 <template>
-  <div class="switch-container" @click="toggleSwitch">
+  <div class="c-switch-container" @click="toggleSwitch">
     <input
-      class="switch-input" 
+      class="c-switch-container__switch-input" 
       :checked="modelValue" 
       @input="emitUpdate" 
       type="checkbox" 
     />
-    <div class="switch-slider"></div>
+
+    <div class="c-switch-container__switch-slider"></div>
   </div>
 </template>
 
@@ -42,17 +43,17 @@ export default defineComponent({
 </script>
 
 <style scoped lang="scss">
-.switch-container {
+.c-switch-container {
   position: relative;
   display: inline-block;
   width: 50px;
   height: 25px;
 
-  .switch-input {
+  &__switch-input {
     display: none;
   }
 
-  .switch-slider {
+  &__switch-slider {
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -86,7 +87,7 @@ export default defineComponent({
     }
   }
 
-  .switch-input:checked + .switch-slider {
+  &__switch-input:checked + &__switch-slider {
     background: #3B755F;
 
     &:before {
