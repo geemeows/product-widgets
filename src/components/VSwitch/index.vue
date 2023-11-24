@@ -1,10 +1,14 @@
 <template>
-  <div class="c-switch-container" @click="toggleSwitch">
+  <div
+    class="c-switch-container" 
+    @click="toggleSwitch"
+  >
     <input
-      class="c-switch-container__switch-input" 
+      class="c-switch-container__switch-input"
       :checked="modelValue" 
       @input="emitUpdate" 
-      type="checkbox" 
+      type="checkbox"
+      data-qa="switch"
     />
 
     <div class="c-switch-container__switch-slider"></div>

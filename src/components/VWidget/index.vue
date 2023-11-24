@@ -26,9 +26,19 @@
     <div class="c-widget__field">
       <div class="c-widget__field__title">
         <span>Link to Public Profile</span>
+        
         <div class="c-widget__field__tooltip">
-          <div class="c-widget__field__tooltip__tooltip-icon">i</div>
-          <div class="c-widget__field__tooltip__tooltip-text">
+          <div
+            class="c-widget__field__tooltip__tooltip-icon"
+            data-qa="tooltip-icon"
+          >
+            i
+          </div>
+          
+          <div 
+            class="c-widget__field__tooltip__tooltip-text"
+            data-qa="tooltip-content"
+          >
             <p class="c-widget__field__tooltip__tooltip-text__tooltip-text-content">
               This widget links directly to your public profile so that you can easily share your impact with your customers. Turn it off here if you do not want the badge to link to it.
             </p>

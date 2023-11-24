@@ -1,5 +1,5 @@
 <template>
-  <div class="c-widget-skeleton">
+  <div class="c-widget-skeleton" data-qa="skeleton">
     <div style="height: 70.59px; margin-bottom: 10px" class="c-widget-skeleton__item" />
     <div style="height: 12px; margin-bottom: 10px; width: 150px" class="c-widget-skeleton__item" />
     <div style="height: 12px; margin-bottom: 10px; width: 80px" class="c-widget-skeleton__item" />
